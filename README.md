@@ -1,17 +1,24 @@
-Network-Scale Traffic Signal Prioritization System for Emergency Vehicles
-DOI MATLAB PTV VISSIM License: GPL v3
+# Network-Scale Traffic Signal Prioritization System for Emergency Vehicles
 
-📌 Project Description
-This repository contains the source code, algorithms, and simulation datasets developed as part of the doctoral thesis "Emergent traffic signal systems for the circulation of priority vehicles".
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![MATLAB](https://img.shields.io/badge/MATLAB-R2023a-blue.svg)](https://www.mathworks.com/products/matlab.html)
+[![PTV VISSIM](https://img.shields.io/badge/PTV_VISSIM-202X-orange.svg)](https://www.ptvgroup.com/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+## 📌 Project Description
+
+This repository contains the source code, algorithms, and simulation datasets developed as part of the doctoral thesis *"Sistemas emergentes semafóricos para la circulación de vehículos prioritarios"* (Emergent traffic signal systems for the circulation of priority vehicles).
 
 The algorithmic framework proposes a dynamic, integrated network-scale prioritization system for emergency vehicles, overcoming the structural limitations of conventional hard-preemption approaches. The system is composed of three main modular components:
+1. **Topological Extraction:** Deterministic generation of directional adjacency lists at the individual traffic light level.
+2. **Conflict Detection:** Automatic topological identification of signal incompatibilities (convergence and crossing conflicts) without manual configuration.
+3. **Extended Green Wave:** A dynamic hierarchical control algorithm that establishes expansive priority corridors in real-time and manages a "red line" for the preventive flushing of civil traffic.
 
-Topological Extraction: Deterministic generation of directional adjacency lists at the individual traffic light level.
-Conflict Detection: Automatic topological identification of signal incompatibilities (convergence and crossing conflicts) without manual configuration.
-Extended Green Wave: A dynamic hierarchical control algorithm that establishes expansive priority corridors in real-time and manages a "red line" for the preventive flushing of civil traffic.
 The system has been empirically validated across three highly complex urban topologies: the orthogonal grid of Boise (USA), the dense topological mesh of Luxembourg, and the irregular historical layout of London (UK).
 
-📂 Repository Structure
+## 📂 Repository Structure
+
+```text
 📦 Emerging-Priority-System
  ┣ 📂 data/                 # Base topologies (.inpx files) and spatial matrices (Boise, Luxembourg, London)
  ┣ 📂 src/                  # Source code (MATLAB)
@@ -33,7 +40,8 @@ PTV VISSIM (Research/Commercial License) to run the dynamic microscopic traffic 
 Clone this repository to your local machine:
 
 Bash
-git clone https://github.com/Sergio-Rojas-Blanco/Emerging-Priority-System.git
+git clone https://github.com/tu-nuevo-usuario/Emerging-Priority-System.git
+
 Open MATLAB and set the root directory of the repository as your Current Folder.
 
 Execute the topological extraction scripts in src/01_adjacency/ to precalculate the spatial structures.
