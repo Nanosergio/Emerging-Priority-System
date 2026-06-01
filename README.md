@@ -40,7 +40,7 @@ PTV VISSIM (Research/Commercial License) to run the dynamic microscopic traffic 
 Clone this repository to your local machine:
 
 Bash
-git clone https://github.com/tu-nuevo-usuario/Emerging-Priority-System.git
+git clone https://github.com/Sergio-Rojas-Blanco/Emerging-Priority-System.git
 
 Open MATLAB and set the root directory of the repository as your Current Folder.
 
